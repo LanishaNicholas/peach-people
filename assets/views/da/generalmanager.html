@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Søg stillingen - Daglig leder</title>
+    <link rel="icon" type="image/png" href="../../img/logo.png" />
+    <link rel="stylesheet" href="../../public/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../public/css/vacancy.css" />
+    <link rel="stylesheet" href="../../public/css/header.css" />
+    <link rel="stylesheet" href="../../public/css/sweetalert2.min.css">
+    <link rel="stylesheet" href="../../public/css/MessageSystem.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    
+</head>
+
+<body>
+    <header class="sticky-top bg-white py-2">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="logo d-flex align-items-center">
+                <img src="../../img/Peach_people.png" alt="Logo" class="logo-img mr-2">
+                <span class="company-slogan">Global Communication</span>
+            </div>
+            <nav>
+                <ul class="nav nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Hjem</a></li>
+                    <li class="nav-item active"><a href="career.html" class="nav-link active">Ledige stillinger</a></li>
+                    <li class="nav-item "><a href="contact-us.html" class="nav-link">Kontakt</a></li>
+                    <li class="nav-item dropdown language">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Sprog</a>
+                        <ul class="dropdown-menu language-dropdown">
+                          <li><a href="../no/index.html">Norsk</a></li>
+                          <li><a href="../sv/index.html">Svensk</a></li>
+                          <li><a href="../fi/index.html">finsk</a></li>
+                          <li><a href="../da/index.html">Dansk</a></li>
+                          <li><a href="../is/index.html">Islandsk</a></li>
+                          <li><a href="../de/index.html">Tysk</a></li>
+                          <li><a href="../fr/index.html">Fransk</a></li>
+                          <li><a href="../en/index.html">Engelsk</a></li>
+                      </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container heading">
+        <div class="row managecontent">
+        <h1>Bliv en del af vores team som Daglig leder</h1>
+        </div>
+        <div class="row managecontent">
+        <p class="details">Vi leder efter en passioneret og talentfuld Daglig leder som vil blive en del af vores team.</p>
+        <p class="details"><i class="fas fa-building"></i> Selskab : <span class="company-location">Peach People</span></p>
+        <p class="details"><i class="fas fa-map-marker-alt"></i> Sted : <span class="company-location">Norge, Denmark, Finland, Island,  Tyskland, Frankrig and Spanien</span></p>
+        </div>
+    </div>
+    <div class="container jobdescription mb-4">
+        <div class="row managecontent">
+            <p class="details">
+                Er du en dynamisk leder med en passion for kvalitet? Peach People søger en erfaren daglig leder til at styre vores firma mod dets strategiske mål. 
+                I denne rolle vil du være i kernen af vores drift, sikre gnidningsfri samarbejde mellem afdelinger og samtidig fremme vores unikke organisationskultur. 
+                Dit visionære lederskab, kombineret med hands-on styring, vil tjene som den kritiske forbindelse mellem vores dedikerede arbejdsstyrke og ledelsen.
+            </p>
+        </div>
+        <div class="row managecontent">
+            <h4>Primære opgaver:</h4>
+              <ul>
+                	<li>Overvåger alle aspekter af firmaets drift.</li>
+                	<li>Sikrer at afdelinger arbejder effektivt sammen for at nå organisationens mål.</li>
+                	<li>Ansvarlig for strategisk planlægning og at sætte præstationsmål.</li>
+                	<li>Sikrer at målene nås rettidigt og effektivt.</li>
+                	<li>Håndterer budgetter, ressourcer og fordeler dem hensigtsmæssigt.</li>
+                	<li>Bygger og styrker relationer med samarbejdspartnere.</li>
+                	<li>Værner om og håndhæver firmaets værdier og retningslinjer.</li>
+                	<li>Fungerer som hovedkontakt mellem medarbejdere og ledelsen eller bestyrelsen.</li>
+                	<li>Spiller en nøglerolle i at forme firmaets kultur og arbejdsmiljø.</li>
+                	<li>Driver firmaets vækst og tilpasser strategierne til skiftende markedsforhold.</li>
+              </ul>
+        </div>
+        <div class="row managecontent">
+            <h4>Kvalifikationer:</h4>
+              <ul>
+                	<li>Erfaring fra en tilsvarende lederposition.</li>
+                	<li>Stærke analytiske evner og beslutningstagning.</li>
+                	<li>Fremragende kommunikationsevner og evne til at bygge relationer.</li>
+              </ul>
+              <p>Bliv en del af Peach People og bidrag til vores vækst. Ansøg nu!</p>
+        </div>
+        <div class="row managecontent">
+            <h2>Ansøg om stillingen</h2>
+            <form id="applicationForm" method="POST" action="/submit-form" enctype="multipart/form-data">
+            <label for="job">Ansøg om :</label>
+            <input type="text" id="job" name="job" value="Daglig leder" required disabled>
+
+            <label for="fullName">Fulde navn:</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="phone">Telefon:</label>
+            <input type="text" id="phone" name="phone" required>
+            
+            <label for="email">E-mail :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="aboutyou">Fortæl om dig selv:</label>
+            <textarea id="aboutyou"  name="aboutyou" class="aboutyou" rows="4"></textarea>
+            
+            <label for="cv">Upload CV:</label>
+            <input type="file" id="attachment" name="attachment" accept=".pdf,.doc,.docx">
+            
+            <button type="submit" class="btn modelBtn" data-lang="dk">Send</button>
+            </form>
+        </div>
+    </div>
+
+     <!-- Overlay background -->
+     <div class="overlay" id="overlay"></div>
+     <!-- Cookie Consent Modal -->
+     <div id="cookieConsent">
+         <div class="container">
+             <div class="cookieheading">
+                 <h4>Denne side bruger cookies</h4>
+             </div>
+             <div class="cookiecontent">
+                 <p>
+                     På vores side bruger vi cookies til at forbedre brugeroplevelsen, optimere websiden, og til markedsføring.
+                     Ved at give samtykke accepterer du, hvordan vi bruger cookies.
+ 
+                 </p>
+             </div>
+             <div id="cookieConsentButtons">
+                 <button type="button" class="btn btn-success" id="acceptBtn">Acceptér</button>
+                 <button type="button" class="btn btn-danger" id="rejectBtn">Afvis</button>
+                 <button type="button" class="btn" id="customizeBtn">Tilpas cookies</button>
+             </div>
+         </div>
+     </div>
+     <div class="customizecookie d-none">
+         <div class="container">
+             <div class="cookieheading cookiHeadingForCustomize">
+                 <h4>Denne side bruger cookies</h4>
+             </div>
+             <div class="necessarycookie">
+                 <div class="row necesarryHeadingSetting">
+                     <div class="col-9 necessaryheading">
+                         <h5>Nødvendige cookies – kan ikke slås fra</h5>
+                     </div>
+                         <!-- Toggle Switch -->
+                     <div class="col-3 setChoice">
+                         <label class="onoff-switch">
+                             <input type="checkbox" id="necessaryCheckbox" checked disabled>
+                             <span class="onoff-slider"></span>
+                         </label>
+                     </div>
+                 </div>
+                 
+                 <div class="necessarycontent">
+                     <p>
+                         Nødvendige cookies bruges til grundlæggende funktioner som side-navigation 
+                         og for at få adgang til beskyttede dele af websiden. Websiden kan ikke fungere tilfredsstillende uden disse cookies.
+                     </p>
+                 </div>
+             </div>
+             <div class="marketing">
+                 <div class="row necesarryHeadingSetting">
+                     <div class="col-9 necessaryheading">
+                         <h5>Markedsføring</h5>
+                     </div>
+                     <div class="col-3 setChoice">
+                         <!-- Toggle Switch -->
+                         <label class="onoff-switch">
+                             <input type="checkbox" id="marketingCheckBox" checked>
+                             <span class="onoff-slider"></span>
+                         </label>
+                     </div>
+                 </div>
+ 
+                 <div class="necessarycontent">
+                     <p>
+                         Denne cookie hjælper os med at finde brugere, der er interesserede i information om forskellige emner, 
+                         så vi kan give dig relevante annonser.
+                     </p>
+                 </div>
+ 
+             </div>
+             <div class="d-flex justify-content-between">
+                 <button type="button" class="btn btn-success" id="saveAndCloseCookies">Gem ændringer og luk</button>
+                 <button type="button" class="btn readMorePrivacyBtn" id="readMorePrivacy">Læs mere</button>
+             </div>
+         </div>
+     </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Kontakt os</h4>
+                    <p>E-mail: star@peachgroup.no</p>
+                    <p>Telefon: (+47) 982 34 223</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Følg os på</h4>
+                    <div class="social-icons">
+                      <a href="https://www.facebook.com/profile.php?id=61550771313894" target="_blank"><i class="fab fa-facebook"></i></a>
+                      <a href="https://www.tiktok.com/@peachpeoplenorge" target="_blank"><i class="fab fa-tiktok"></i></a>
+                      <a href="https://www.instagram.com/peachpeoplenorge/" target="_blank"><i class="fab fa-instagram"></i></a>
+                      <a href="https://www.linkedin.com/company/peach-people-norge/about/?viewAsMember=true" target="_blank"><i class="fab fa-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                    <h4>Tilmeld dig vores nyhedsbrev</h4>
+                    <p>Hold dig opdateret med vores seneste nyheder og kampagner.</p>
+                    <form class="subscribe-form">
+                      <input type="email" id="newsletter" placeholder="Indtast din e-mail">
+                      <button type="submit" class="subscribeNews" data-language="Danish">Tilmeld</button>
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center">&copy; 2023 Peach People. Alle rettigheder forbeholdes.</p>
+        </div>
+    </footer>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="../../vendors/bootstrap/bootstrap.min.js"></script>
+  <script src="../../public/js/header.js"></script>
+  <script src="../../public/js/career.js"></script>
+  <script src="../../public/js/sweetalert2.all.min.js"></script>
+  <script src="../../public/js/sweetalert2.min.js"></script>
+  <script src="../../public/js/MessageSystem.js"></script>
+ 
+  <script>
+    $(document).ready(function() {
+        sessionStorage.setItem('selectedLanguage', 'da');
+        sessionStorage.setItem('languageCode', "da");
+    });
+</script>
+</body>
+
+</html>

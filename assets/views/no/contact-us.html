@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peach People - Contact Us</title>
+    <link rel="icon" type="image/png" href="../../img/logo.png"/>
+    <link rel="stylesheet" href="../../public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../public/css/header.css">
+    <link rel="stylesheet" href="../../public/css/contactus.css">
+    <link rel="stylesheet" href="../../public/css/MessageSystem.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DMTCYLY5M4"></script>
+    <script>window.dataLayer = window.dataLayer || [];   function gtag(){dataLayer.push(arguments);}   gtag('js', new Date());   gtag('config', 'G-DMTCYLY5M4'); </script>
+    <!-- Meta Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s){
+          if(f.fbq)return;n=f.fbq=function(){
+            n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)
+          };
+          if(!f._fbq)
+            f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+          n.queue=[];t=b.createElement(e);t.async=!0;
+          t.src=v;s=b.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t,s)
+        }
+        (window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+        
+        fbq('init', '297517359558547');
+        fbq('track', 'PageView');
+      </script>
+      <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=297517359558547&ev=PageView&noscript=1"/></noscript>
+        <!-- End Meta Pixel Code -->
+</head>
+<body>
+    <header class="sticky-top bg-white py-2">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="logo d-flex align-items-center">
+                <img src="../../img/Peach_people.png" alt="Logo" class="logo-img mr-2">
+                <span class="company-slogan">Global Communication</span>
+            </div>
+            <nav>
+                <ul class="nav nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Hjem</a></li>
+                    <li class="nav-item"><a href="career.html" class="nav-link active">Ledige stillinger</a></li>
+                    <li class="nav-item active"><a href="contact-us.html" class="nav-link">Kontakt</a></li>
+                    <li class="nav-item dropdown language">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Språk</a>
+                        <ul class="dropdown-menu language-dropdown">
+                            <li><a href="../no/index.html">Norsk</a></li>
+                            <li><a href="../sv/index.html">Svensk</a></li>
+                            <li><a href="../fi/index.html">Finsk</a></li>
+                            <li><a href="../da/index.html">Dansk</a></li>
+                            <li><a href="../is/index.html">Islandsk</a></li>
+                            <li><a href="../de/index.html">Tysk</a></li>
+                            <li><a href="../fr/index.html">Fransk</a></li>
+                            <li><a href="../en/index.html">Engelsk</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="headerimg">
+      <div class="overlay"></div>
+      <div class="text">Ta kontakt</div>
+      <div class="subtext">Vi vil gjerne høre fra deg. Fyll ut informasjonen din under, så tar vi kontakt.</div>
+    </div>
+    <div class="container contact-section">
+        <div class="contact-form">
+            <form>
+                <label for="name">Navn <span class="astric">*</span></label>
+                <input type="text" class="contactInput" id="name" name="name" required>
+    
+                <label for="email">E-post  <span class="astric">*</span></label>
+                <input type="email" class="contactInput" id="email" name="email" required>
+
+                <label for="phone">Telefon  <span class="astric">*</span></label>
+                <input type="phone" class="contactInput" id="phone" name="phone" required>
+    
+                <label for="message">Hva gjelder det?  <span class="astric">*</span></label>
+                <textarea id="message" class="contactInput" name="message" rows="4" required></textarea>
+                
+                <label for="privacy">Personvern  <span class="astric">*</span></label>
+                <label class="checkbox-container">
+                    <input type="checkbox" id="privacy">
+                    <span class="checkmark"></span>
+                    <span class="privacyMsg">Peach People kan kontakte meg og bruke informasjonen i samsvar med 
+                        <a href="privacy.html" class="privacyPage">personvernerklæringen</a> 
+                    </span>
+                </label>
+                <span class="errMsg"></span>
+                <br>
+                <button type="submit" id="contactBtn">Send inn</button>
+            </form>
+            <div class="success-message" id="successMessage">
+                <p>Takk for at du tok kontakt! Vi vil kontakte deg så snart vi har gjennomgått meldingen din.</p>
+            </div>
+            <div class="error-message" id="errorMessage">
+                <p>Feil ved sending av e-post. Vennligst prøv igjen senere.</p>
+            </div>
+        </div>
+        <div class="company-addresses">
+            <div class="address">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.5737995313035!2d10.740512914772318!3d59.91277996834207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416dd7d787c509%3A0xed171fc0cf44c161!2sKarl%20Johans%20gate%2041A%2C%200162%20Oslo%2C%20Norway!5e0!3m2!1sen!2sus!4v1630893344843!5m2!1sen!2sus" width="600" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Overlay background -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Cookie Consent Modal -->
+    <div id="cookieConsent">
+        <div class="container">
+            <div class="cookieheading">
+                <h4>Denne siden bruker cookies</h4>
+            </div>
+            <div class="cookiecontent">
+                <p>
+                    På siden vår bruker vi cookies til å forbedre brukeropplevelsen, optimalisere websiden, og for markedsføring.
+                    Ved å samtykke, aksepterer du hvordan vi bruker cookies.
+                </p>
+            </div>
+            <div id="cookieConsentButtons">
+                <button type="button" class="btn btn-success" id="acceptBtn">Godkjenn</button>
+                <button type="button" class="btn btn-danger" id="rejectBtn">Avslå</button>
+                <button type="button" class="btn" id="customizeBtn">Tilpass cookies</button>
+            </div>
+        </div>
+    </div>
+    <div class="customizecookie d-none">
+        <div class="container">
+            <div class="cookieheading cookiHeadingForCustomize">
+                <h4>Denne siden bruker cookies</h4>
+            </div>
+            <div class="necessarycookie">
+                <div class="row necesarryHeadingSetting">
+                    <div class="col-9 necessaryheading">
+                        <h5>Nødvendige cookies – kan ikke skrus av</h5>
+                    </div>
+                        <!-- Toggle Switch -->
+                    <div class="col-3 setChoice">
+                        <label class="onoff-switch">
+                            <input type="checkbox" id="necessaryCheckbox" checked disabled>
+                            <span class="onoff-slider"></span>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="necessarycontent">
+                    <p>
+                        Nødvendige cookies brukes til grunnleggende funksjoner som side-navigering og for å få tilgang til beskyttede 
+                        deler av websiden. Websiden kan ikke fungere tilfredsstillende uten disse cookiene.
+                    </p>
+                </div>
+            </div>
+            <div class="marketing">
+                <div class="row necesarryHeadingSetting">
+                    <div class="col-9 necessaryheading">
+                        <h5>Markedsføring</h5>
+                    </div>
+                    <div class="col-3 setChoice">
+                        <!-- Toggle Switch -->
+                        <label class="onoff-switch">
+                            <input type="checkbox" id="marketingCheckBox" checked>
+                            <span class="onoff-slider"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="necessarycontent">
+                    <p>
+                        Denne cookien hjelper oss med å finne brukere som er interesserte i informasjon om forskjellige emner, 
+                        sånn at vi gi deg relevante annonser.
+                    </p>
+                </div>
+
+            </div>
+            <div class="d-flex justify-content-between">
+                <button type="button" class="btn btn-success" id="saveAndCloseCookies">Lagre og lukk</button>
+                <button type="button" class="btn readMorePrivacyBtn" id="readMorePrivacy">Les mer</button>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Kontakt oss</h4>
+                    <p>E-post: star@peachgroup.no</p>
+                    <p>Telefon: (+47) 982 34 223</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Følg oss på</h4>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=61550771313894" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.tiktok.com/@peachpeoplenorge" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.instagram.com/peachpeoplenorge/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/peach-people-norge/about/?viewAsMember=true" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h4>Abonner på vårt nyhetsbrev</h4>
+                    <p>Hold deg oppdatert med våre siste nyheter og kampanjer.</p>
+                    <form class="subscribe-form">
+                        <input type="email" id="newsletter" placeholder="Legg inn din e-post">
+                        <button type="submit" class="subscribeNews" data-language="Norwegian">Abonnere</button>
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center">&copy; 2023 Peach People. Alle rettigheter forbeholdt.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../../vendors/bootstrap/bootstrap.min.js"></script>
+    <script src="../../public/js/header.js"></script>
+    <script src="../../public/js/contact.js"></script>
+    <script src="../../public/js/MessageSystem.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            sessionStorage.setItem("selectedLanguage","no");
+        });
+    </script>
+</body>
+</html>

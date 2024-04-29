@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postulez pour le poste de - Directeur Général</title>
+    <link rel="icon" type="image/png" href="../../img/logo.png" />
+    <link rel="stylesheet" href="../../public/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../public/css/vacancy.css" />
+    <link rel="stylesheet" href="../../public/css/header.css" />
+    <link rel="stylesheet" href="../../public/css/sweetalert2.min.css">
+    <link rel="stylesheet" href="../../public/css/MessageSystem.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    
+</head>
+
+<body>
+    <header class="sticky-top bg-white py-2">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="logo d-flex align-items-center">
+                <img src="../../img/Peach_people.png" alt="Logo" class="logo-img mr-2">
+                <span class="company-slogan">Global Communication</span>
+            </div>
+            <nav>
+                <ul class="nav nav-list">
+                    <li class="nav-item "><a href="index.html" class="nav-link">Maison</a></li>
+                    <li class="nav-item active"><a href="career.html" class="nav-link">Postes vacants</a></li>
+                    <li class="nav-item"><a href="contact-us.html" class="nav-link">Contact</a></li>
+                    <li class="nav-item dropdown language">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Langue</a>
+                        <ul class="dropdown-menu language-dropdown">
+                          <li><a href="../no/index.html">Norvégien</a></li>
+                          <li><a href="../sv/index.html">Suédois</a></li>
+                          <li><a href="../fi/index.html">Finlandais</a></li>
+                          <li><a href="../da/index.html">Danois</a></li>
+                          <li><a href="../is/index.html">Islandais</a></li>
+                          <li><a href="../de/index.html">Allemand</a></li>
+                          <li><a href="../fr/index.html">Français</a></li>
+                          <li><a href="../en/index.html">Anglais</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container heading">
+        <div class="row managecontent">
+        <h1>Rejoignez notre équipe en tant que Directeur Général.</h1>
+        </div>
+        <div class="row managecontent">
+        <p class="details">Nous recherchons un Directeur Général passionné et talentueux pour rejoindre notre équipe.</p>
+        <p class="details"><i class="fas fa-building"></i> Entreprise : <span class="company-location">Peach People</span></p>
+        <p class="details"><i class="fas fa-map-marker-alt"></i> Emplacement : <span class="company-location">Norvège, Danemark, Finlande, Islande, Allemagne, France, Espagne</span></p>
+        </div>
+    </div>
+    <div class="container jobdescription mb-4">
+        <div class="row managecontent">
+            <p class="details">
+                Êtes-vous un leader dynamique avec une passion pour la qualité ? Peach People recherche un directeur général expérimenté pour guider 
+                notre entreprise vers ses objectifs stratégiques. Dans ce rôle, vous serez au cœur de nos opérations, garantissant une collaboration 
+                fluide entre les départements tout en favorisant notre culture organisationnelle unique. Votre leadership visionnaire, combiné à une 
+                gestion pratique, servira de lien essentiel entre notre équipe dévouée et la direction exécutive.
+            </p>
+        </div>
+        <div class="row managecontent">
+            <h4>Responsabilités principales :</h4>
+              <ul>
+                  <li>Supervise tous les aspects des opérations de l'entreprise.</li>
+                  <li>Assure que les départements collaborent efficacement pour atteindre les objectifs de l'organisation.</li>
+                  <li>Responsable de la planification stratégique et de la définition des objectifs de performance.</li>
+                  <li>Veille à ce que les objectifs soient atteints en temps opportun et de manière efficace.</li>
+                  <li>Gère les budgets, les ressources et les alloue de manière appropriée.</li>
+                  <li>Établit et renforce les relations avec les partenaires.</li>
+                  <li>Préserve et fait respecter les valeurs et les normes de l'entreprise.</li>
+                  <li>Sert de principal point de contact entre les employés et la direction ou le conseil d'administration.</li>
+                  <li>Joue un rôle clé dans la définition de la culture et de l'environnement de travail de l'entreprise.</li>
+                  <li>Stimule la croissance de l'entreprise et adapte les stratégies aux conditions changeantes du marché.</li>
+              </ul>
+        </div>
+        <div class="row managecontent">
+            <h4>Qualifications :</h4>
+              <ul>
+                  <li>Expérience dans un rôle de direction similaire.</li>
+                  <li>Solides capacités analytiques et de prise de décision.</li>
+                  <li>Excellentes compétences en communication et en relations interpersonnelles.</li>
+              </ul>
+              <p>Rejoignez Peach People et contribuez à notre croissance. Postulez maintenant !</p>
+        </div>
+        <div class="row managecontent">
+            <h2>Postuler pour le poste</h2>
+            <form id="applicationForm" method="POST" action="/submit-form" enctype="multipart/form-data">
+            <label for="job">Postuler pour:</label>
+            <input type="text" id="job" name="job" value="Directeur général" required disabled>
+
+            <label for="fullName">Nom complet:</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="phone">Téléphone:</label>
+            <input type="text" id="phone" name="phone" required>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="aboutyou">Parlez de vous:</label>
+            <textarea id="aboutyou"  name="aboutyou" class="aboutyou" rows="4"></textarea>
+            
+            <label for="cv">Télécharger le CV:</label>
+            <input type="file" id="attachment" name="attachment" accept=".pdf,.doc,.docx">
+            
+            <button type="submit" class="btn modelBtn" data-lang="fr">Envoyer</button>
+            </form>
+        </div>
+    </div>
+
+     <!-- Overlay background -->
+     <div class="overlay" id="overlay"></div>
+     <!-- Modal de consentement aux cookies -->
+     <div id="cookieConsent">
+         <div class="container">
+             <div class="cookieheading">
+                 <h4>Cette page utilise des cookies</h4>
+             </div>
+             <div class="cookiecontent">
+                 <p>
+                     Sur notre site Web, nous utilisons des cookies pour améliorer l'expérience utilisateur, optimiser notre site Web et à des fins de marketing.
+                     En cliquant sur accepter, vous acceptez notre utilisation de ces cookies.
+                 </p>
+             </div>
+             <div id="cookieConsentButtons">
+                 <button type="button" class="btn btn-success" id="acceptBtn">Accepter</button>
+                 <button type="button" class="btn btn-danger" id="rejectBtn">Refuser</button>
+                 <button type="button" class="btn" id="customizeBtn">Personnaliser les cookies</button>
+             </div>
+         </div>
+     </div>
+     <div class="customizecookie d-none">
+         <div class="container">
+             <div class="cookieheading cookiHeadingForCustomize">
+                 <h4>Cette page utilise des cookies</h4>
+             </div>
+             <div class="necessarycookie">
+                 <div class="row necesarryHeadingSetting">
+                     <div class="col-9 necessaryheading">
+                         <h5>Cookies nécessaires - ne peuvent pas être désactivés</h5>
+                     </div>
+                         <!-- Commutateur basculant -->
+                     <div class="col-3 setChoice">
+                         <label class="onoff-switch">
+                             <input type="checkbox" id="necessaryCheckbox" checked disabled>
+                             <span class="onoff-slider"></span>
+                         </label>
+                     </div>
+                 </div>
+                 
+                 <div class="necessarycontent">
+                     <p>
+                         Les cookies nécessaires gèrent des fonctions de base telles que la navigation dans les pages et l'accès aux zones sécurisées du site Web. Le site Web ne peut pas
+                         fonctionner de manière optimale sans ces cookies.
+                     </p>
+                 </div>
+             </div>
+             <div class="marketing">
+                 <div class="row necesarryHeadingSetting">
+                     <div class="col-9 necessaryheading">
+                         <h5>Marketing</h5>
+                     </div>
+                     <div class="col-3 setChoice">
+                         <!-- Commutateur basculant -->
+                         <label class="onoff-switch">
+                             <input type="checkbox" id="marketingCheckBox" checked>
+                             <span class="onoff-slider"></span>
+                         </label>
+                     </div>
+                 </div>
+ 
+                 <div class="necessarycontent">
+                     <p>
+                         Ce cookie nous aide à trouver des utilisateurs intéressés par des informations sur divers sujets afin que nous puissions vous fournir des publicités pertinentes de notre part.
+                     </p>
+                 </div>
+ 
+             </div>
+             <div class="d-flex justify-content-between">
+                 <button type="button" class="btn btn-success" id="saveAndCloseCookies">Enregistrer et fermer</button>
+                 <button type="button" class="btn readMorePrivacyBtn" id="readMorePrivacy">En savoir plus</button>
+             </div>
+         </div>
+     </div>
+     
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Contactez-nous</h4>
+                    <p>E-mail: star@peachgroup.no</p>
+                    <p>Téléphone: (+47) 982 34 223</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Suivez-nous sur</h4>
+                    <div class="social-icons">
+                      <a href="https://www.facebook.com/profile.php?id=61550771313894" target="_blank"><i class="fab fa-facebook"></i></a>
+                      <a href="https://www.tiktok.com/@peachpeoplenorge" target="_blank"><i class="fab fa-tiktok"></i></a>
+                      <a href="https://www.instagram.com/peachpeoplenorge/" target="_blank"><i class="fab fa-instagram"></i></a>
+                      <a href="https://www.linkedin.com/company/peach-people-norge/about/?viewAsMember=true" target="_blank"><i class="fab fa-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                    <h4>Abonnez-vous à notre newsletter</h4>
+                    <p>Restez informé avec nos dernières nouvelles et campagnes.</p>
+                    <form class="subscribe-form">
+                      <input type="email" id="newsletter" placeholder="Entrez votre adresse e-mail">
+                      <button type="submit" class="subscribeNews" data-language="French">S'abonner</button>
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center">&copy; 2023 Peach People. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="../../vendors/bootstrap/bootstrap.min.js"></script>
+  <script src="../../public/js/header.js"></script>
+  <script src="../../public/js/career.js"></script>
+  <script src="../../public/js/sweetalert2.all.min.js"></script>
+  <script src="../../public/js/sweetalert2.min.js"></script>
+  <script src="../../public/js/MessageSystem.js"></script>
+  <script>
+    sessionStorage.setItem('languageCode', "fr");
+  </script>
+</body>
+
+</html>

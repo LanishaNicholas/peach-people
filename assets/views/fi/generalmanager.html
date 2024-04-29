@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hae paikkaa - Päällikköä Johtajaa</title>
+    <link rel="icon" type="image/png" href="../../img/logo.png" />
+    <link rel="stylesheet" href="../../public/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../public/css/vacancy.css" />
+    <link rel="stylesheet" href="../../public/css/header.css" />
+    <link rel="stylesheet" href="../../public/css/sweetalert2.min.css">
+    <link rel="stylesheet" href="../../public/css/MessageSystem.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+   
+</head>
+
+<body>
+    <header class="sticky-top bg-white py-2">
+        <div class="container d-flex justify-content-between align-items-center">
+          <div class="logo d-flex align-items-center">
+            <img src="../../img/Peach_people.png" alt="Logo" class="logo-img mr-2">
+            <span class="company-slogan">Global Communication</span>
+          </div>
+          <nav>
+            <ul class="nav nav-list">
+              <li class="nav-item"><a href="index.html" class="nav-link">Koti</a></li>
+              <li class="nav-item active"><a href="career.html" class="nav-link active">Avoimet paikat</a></li>
+              <li class="nav-item"><a href="contact-us.html" class="nav-link">Ota yhteyttä</a></li>
+              <li class="nav-item dropdown language">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Kieli</a>
+                <ul class="dropdown-menu language-dropdown">
+                  <li><a href="../no/index.html">Norja</a></li>
+                  <li><a href="../sv/index.html">Ruotsi</a></li>
+                  <li><a href="../fi/index.html">Suomi</a></li>
+                  <li><a href="../da/index.html">Tanskan</a></li>
+                  <li><a href="../is/index.html">Islantilainen</a></li>
+                  <li><a href="../de/index.html">Saksan</a></li>
+                  <li><a href="../fr/index.html">Ranskan</a></li>
+                  <li><a href="../en/index.html">Englanti</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    <div class="container heading">
+        <div class="row managecontent">
+        <h1>Liity tiimiimme toimitusjohtajana</h1>
+        </div>
+        <div class="row managecontent">
+        <p class="details">Etsimme intohimoista ja lahjakasta toimitusjohtajaa liittymään tiimiimme.</p>
+        <p class="details"><i class="fas fa-building"></i> Yritys : <span class="company-location">Peach People</span></p>
+        <p class="details"><i class="fas fa-map-marker-alt"></i> Sijainti : <span class="company-location">Norja, Tanska, Suomi, Islanti, Saksa, Ranska, Espanja</span></p>
+        </div>
+    </div>
+    <div class="container jobdescription mb-4">
+        <div class="row managecontent">
+            <p class="details">
+                Oletko dynaaminen johtaja, jolla on intohimo laatua kohtaan? Peach People etsii kokenutta päällikköä johtajaa ohjaamaan 
+                yritystämme strategisia tavoitteita kohti. Tässä roolissa olet toimintamme ytimessä, varmistat sujuvan yhteistyön osastojen 
+                välillä ja samalla edistät ainutlaatuista organisaatiokulttuuriamme. Visioiva johtamisesi, yhdistettynä käytännön ohjaukseen, 
+                toimii ratkaisevana yhteytenä omistautuneen työvoimamme ja johdon välillä.
+            </p>
+        </div>
+        <div class="row managecontent">
+            <h4>Päätehtävät:</h4>
+                <ul>
+                    <li>Seuraa kaikkia yrityksen toiminnan osa-alueita. </li>
+                    <li>Varmistaa osastojen tehokas yhteistyö organisaation tavoitteiden saavuttamiseksi.</li>
+                    <li>Vastuussa strategisesta suunnittelusta ja suorituskyvyn tavoitteiden asettamisesta. </li>
+                    <li>Varmistaa, että tavoitteet saavutetaan ajoissa ja tehokkaasti. </li>
+                    <li>Hoitaa budjetteja, resursseja ja jakaa niitä asianmukaisesti. </li>
+                    <li>Rakentaa ja vahvistaa suhteita yhteistyökumppaneiden kanssa. </li>
+                    <li>Vaalia ja noudattaa yrityksen arvoja ja ohjeita. </li>
+                    <li>Toimii pääkontaktina työntekijöiden ja johdon tai hallituksen välillä. </li>
+                    <li>Pelaa keskeistä roolia yrityskulttuurin ja työympäristön muokkaamisessa. </li>
+                    <li>Ajaa yrityksen kasvua ja sopeuttaa strategioita muuttuviin markkinaolosuhteisiin.</li>
+                </ul>
+        </div>
+        <div class="row managecontent">
+            <h4>Pätevyydet:</h4>
+                <ul>
+                    <li>Kokemusta vastaavalta johtotehtävältä.</li>
+                    <li>Vahvat analysointi- ja päätöksentekokyvyt. </li>
+                    <li>Erinomaiset viestintätaidot ja kyky rakentaa suhteita. </li>
+                </ul>
+                <p>Liity Peach Peopleen ja edistä kasvuamme. Hae nyt!</p>
+        </div>
+        <div class="row managecontent">
+            <h2>Hae paikkaa</h2>
+            <form id="applicationForm" method="POST" action="/submit-form" enctype="multipart/form-data">
+            <label for="job">Hae:</label>
+            <input type="text" id="job" name="job" value="Päällikköä Johtajaa" required disabled>
+
+            <label for="fullName">Koko nimi:</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="phone">Puhelin:</label>
+            <input type="text" id="phone" name="phone" required>
+
+            <label for="email">Sähköposti:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="aboutyou">Kerro itsestäsi:</label>
+            <textarea id="aboutyou" name="aboutyou" class="aboutyou" rows="4"></textarea>
+
+            <label for="cv">Lataa CV:</label>
+            <input type="file" id="attachment" name="attachment" accept=".pdf,.doc,.docx">
+
+            <button type="submit" class="btn modelBtn" data-lang="fn">Lähetä</button>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Overlay background -->
+    <div class="overlay" id="overlay"></div>
+    <!-- Cookie Consent Modal -->
+    <div id="cookieConsent">
+        <div class="container">
+            <div class="cookieheading">
+                <h4>Tämä sivusto käyttää evästeitä</h4>
+            </div>
+            <div class="cookiecontent">
+                <p>
+                    Sivustollamme käytämme evästeitä käyttökokemuksen parantamiseen, verkkosivuston optimointiin ja markkinointiin.
+                    Suostumalla hyväksyt, miten käytämme evästeitä.
+
+                </p>
+            </div>
+            <div id="cookieConsentButtons">
+                <button type="button" class="btn btn-success" id="acceptBtn">Hyväksy</button>
+                <button type="button" class="btn btn-danger" id="rejectBtn">Hylkää</button>
+                <button type="button" class="btn" id="customizeBtn">Mukauta evästeitä</button>
+            </div>
+        </div>
+    </div>
+    <div class="customizecookie d-none">
+        <div class="container">
+            <div class="cookieheading cookiHeadingForCustomize">
+                <h4>Tämä sivusto käyttää evästeitä</h4>
+            </div>
+            <div class="necessarycookie">
+                <div class="row necesarryHeadingSetting">
+                    <div class="col-9 necessaryheading">
+                        <h5>Välttämättömät evästeet – ei voi poistaa käytöstä</h5>
+                    </div>
+                        <!-- Toggle Switch -->
+                    <div class="col-3 setChoice">
+                        <label class="onoff-switch">
+                            <input type="checkbox" id="necessaryCheckbox" checked disabled>
+                            <span class="onoff-slider"></span>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="necessarycontent">
+                    <p>
+                        Välttämättömät evästeet ovat tarpeen perustoimintojen, kuten sivuston navigoinnin ja pääsyn 
+                        suojattuihin osiin verkkosivulla. Verkkosivusto ei voi toimia tyydyttävästi ilman näitä evästeitä.
+                    </p>
+                </div>
+            </div>
+            <div class="marketing">
+                <div class="row necesarryHeadingSetting">
+                    <div class="col-9 necessaryheading">
+                        <h5>Markkinointi</h5>
+                    </div>
+                    <div class="col-3 setChoice">
+                        <!-- Toggle Switch -->
+                        <label class="onoff-switch">
+                            <input type="checkbox" id="marketingCheckBox" checked>
+                            <span class="onoff-slider"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="necessarycontent">
+                    <p>
+                        Tämä eväste auttaa meitä löytämään käyttäjiä, jotka ovat kiinnostuneita tiedoista eri aiheista, 
+                        jotta voimme tarjota sinulle relevantteja mainoksia.
+                    </p>
+                </div>
+
+            </div>
+            <div class="d-flex justify-content-between">
+                <button type="button" class="btn btn-success" id="saveAndCloseCookies">Tallenna muutokset ja sulje</button>
+                <button type="button" class="btn readMorePrivacyBtn" id="readMorePrivacy">Lue lisää</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <h4>Ota yhteyttä</h4>
+              <p>Sähköposti: star@peachgroup.no</p>
+              <p>Puhelin: 982 34 223</p>
+            </div>
+            <div class="col-md-4">
+              <h4>Seuraa meitä</h4>
+              <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=61550771313894" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.tiktok.com/@peachpeoplenorge" target="_blank"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.instagram.com/peachpeoplenorge/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/peach-people-norge/about/?viewAsMember=true" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+            </div>
+            <div class="col-md-4">
+              <h4>Tilaa uutiskirjeemme</h4>
+              <p>Pysy ajan tasalla viimeisimmistä uutisistamme ja kampanjoistamme.</p>
+              <form class="subscribe-form">
+                <input type="email" id="newsletter" placeholder="Syötä sähköpostisi">
+                <button type="submit" class="subscribeNews" data-language="Finnish">Tilaa</button>
+            </form>
+            </div>
+          </div>
+          <hr>
+          <p class="text-center">&copy; 2023 Peach People. Kaikki oikeudet pidätetään.</p>
+        </div>
+    </footer>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="../../vendors/bootstrap/bootstrap.min.js"></script>
+  <script src="../../public/js/header.js"></script>
+  <script src="../../public/js/career.js"></script>
+  <script src="../../public/js/sweetalert2.all.min.js"></script>
+  <script src="../../public/js/sweetalert2.min.js"></script>
+  <script src="../../public/js/MessageSystem.js"></script>
+  
+   <script>
+    $(document).ready(function() {
+        sessionStorage.setItem('selectedLanguage', 'fi');
+        sessionStorage.setItem('languageCode', "fi");
+    });
+</script>
+</body>
+
+</html>
