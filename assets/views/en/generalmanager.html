@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apply for position General Manager</title>
+  <link rel="icon" type="image/png" href="../../img/logo.png" />
+  <link rel="stylesheet" href="../../public/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../../public/css/vacancy.css" />
+  <link rel="stylesheet" href="../../public/css/header.css" />
+  <link rel="stylesheet" href="../../public/css/sweetalert2.min.css">
+  <link rel="stylesheet" href="../../public/css/MessageSystem.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  
+</head>
+
+<body>
+  <header class="sticky-top bg-white py-2">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="logo d-flex align-items-center">
+        <img src="../../img/Peach_people.png" alt="Logo" class="logo-img mr-2">
+        <span class="company-slogan">Global Communication</span>
+      </div>
+      <nav>
+        <ul class="nav nav-list">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item active"><a href="career.html" class="nav-link active">Vacancies</a></li>
+          <li class="nav-item"><a href="contact-us.html" class="nav-link">Contact</a></li>
+          <li class="nav-item dropdown language">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Language</a>
+            <ul class="dropdown-menu language-dropdown">
+              <li><a href="../no/index.html">Norwegian</a></li>
+              <li><a href="../sv/index.html">Swedish</a></li>
+              <li><a href="../fi/index.html">Finnish</a></li>
+              <li><a href="../da/index.html">Danish</a></li>
+              <li><a href="../is/index.html">Icelandic</a></li>
+              <li><a href="../de/index.html">German</a></li>
+              <li><a href="../fr/index.html">French</a></li>
+              <li><a href="../en/index.html">English</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="container heading">
+    <div class="row managecontent">
+      <h1>Join Our Team as a General Manager</h1>
+    </div>
+    <div class="row managecontent">
+      <p class="details">We are looking for a passionate and talented manager to join our team.</p>
+      <p class="details"><i class="fas fa-building"></i> Company : <span class="company-location">Peach People</span></p>
+      <p class="details"><i class="fas fa-map-marker-alt"></i> Location: <span class="company-location">Norway, Denmark, Finland, Iceland,  Germany, France and Spain</span></p>
+    </div>
+  </div>
+  <div class="container jobdescription mb-4">
+    <div class="row managecontent">
+        <p class="details">
+            Are you a dynamic leader with a passion for excellence? Peach People is seeking a seasoned General Manager to steer our company towards its 
+            strategic goals. In this role, you'll be at the heart of our operations, ensuring seamless collaboration across departments while fostering 
+            our unique organizational culture. Your visionary leadership, combined with hands-on management, will serve as the pivotal bridge between our 
+            dedicated workforce and the executive board.
+        </p>
+    </div>
+    <div class="row managecontent">
+        <h4>Key Responsibilities:</h4>
+        <ul>
+            <li>Oversees all aspects of a company's operations.</li>
+            <li>Ensures that departments collaborate effectively to achieve organizational goals.</li>
+            <li>Responsible for strategic planning and setting performance objectives.</li>
+            <li>Ensures objectives are met in a timely and efficient manner.</li>
+            <li>Manages budgets, resources, and allocates them appropriately.</li>
+            <li>Maintains and fosters relationships with stakeholders.</li>
+            <li>Upholds and enforces the company's values and standards.</li>
+            <li>Acts as the main point of contact between employees and the executive team or board of directors.</li>
+            <li>Pivotal in shaping the company's culture and work environment.</li>
+            <li>Drives company growth and adapts strategies to changing market conditions.</li>
+        </ul>
+    </div>
+    <div class="row managecontent">
+        <h4>Qualifications:</h4>
+        <ul>
+          <li>Proven experience in a similar leadership role.</li>
+          <li>Strong analytical and decision-making skills.</li>
+          <li>Excellent interpersonal and communication abilities.</li>
+        </ul>
+        <p>Join us at Peach People and lead the way to a brighter, more successful future. Apply now!</p>
+    </div>
+    <div class="row managecontent">
+      <h2>Apply for Position</h2>
+      <form id="applicationForm" method="POST" enctype="multipart/form-data">
+        <label for="job">Apply for:</label>
+        <input type="text" id="job" name="job" value="General Manager" required disabled>
+
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required>
+
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="aboutyou">Say about you:</label>
+        <textarea id="aboutyou" name="aboutyou" class="aboutyou" rows="4"></textarea>
+
+        <label for="attachment">Upload CV:
+        </label>
+        <input type="file" id="attachment" name="attachment" accept=".pdf,.doc,.docx">
+
+        <button type="submit" class="btn modelBtn" data-lang="en">Send</button>
+      </form>
+    </div>
+  </div>
+
+   <!-- Overlay background -->
+   <div class="overlay" id="overlay"></div>
+   <!-- Cookie Consent Modal -->
+   <div id="cookieConsent">
+       <div class="container">
+           <div class="cookieheading">
+               <h4>This page uses cookies</h4>
+           </div>
+           <div class="cookiecontent">
+               <p>
+                   On our website we use cookies to improve the user experience, optimize our website and for marketing.
+                   By clicking accept, you agree to our use of these cookies.
+               </p>
+           </div>
+           <div id="cookieConsentButtons">
+               <button type="button" class="btn btn-success" id="acceptBtn">Approve</button>
+               <button type="button" class="btn btn-danger" id="rejectBtn">Decline</button>
+               <button type="button" class="btn" id="customizeBtn">Customize cookies</button>
+           </div>
+       </div>
+   </div>
+   <div class="customizecookie d-none">
+       <div class="container">
+           <div class="cookieheading cookiHeadingForCustomize">
+               <h4>This page uses cookies</h4>
+           </div>
+           <div class="necessarycookie">
+               <div class="row necesarryHeadingSetting">
+                   <div class="col-9 necessaryheading">
+                       <h5>Necessary cookies - cannot be turned off</h5>
+                   </div>
+                       <!-- Toggle Switch -->
+                   <div class="col-3 setChoice">
+                       <label class="onoff-switch">
+                           <input type="checkbox" id="necessaryCheckbox" checked disabled>
+                           <span class="onoff-slider"></span>
+                       </label>
+                   </div>
+               </div>
+               
+               <div class="necessarycontent">
+                   <p>
+                       Necessary cookies handle basic functions such as page navigation and access to secure areas of the website.The website can not
+                       function optimally without these cookies.
+                   </p>
+               </div>
+           </div>
+           <div class="marketing">
+               <div class="row necesarryHeadingSetting">
+                   <div class="col-9 necessaryheading">
+                       <h5>Marketing</h5>
+                   </div>
+                   <div class="col-3 setChoice">
+                       <!-- Toggle Switch -->
+                       <label class="onoff-switch">
+                           <input type="checkbox" id="marketingCheckBox" checked>
+                           <span class="onoff-slider"></span>
+                       </label>
+                   </div>
+               </div>
+
+               <div class="necessarycontent">
+                   <p>
+                       This cookie helps us to find users who are intrested in information on various topics so that we can 
+                       provide you with relevant advertisments from us.
+                   </p>
+               </div>
+
+           </div>
+           <div class="d-flex justify-content-between">
+               <button type="button" class="btn btn-success" id="saveAndCloseCookies">Save and Close</button>
+               <button type="button" class="btn readMorePrivacyBtn" id="readMorePrivacy">Read more</button>
+           </div>
+       </div>
+   </div>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h4>Contact Us</h4>
+          <p>Email: star@peachgroup.no</p>
+          <p>Phone: (+47) 982 34 223</p>
+        </div>
+        <div class="col-md-4">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=61550771313894" target="_blank"><i
+                class="fab fa-facebook"></i></a>
+            <a href="https://www.tiktok.com/@peachpeoplenorge" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.instagram.com/peachpeoplenorge/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/peach-people-norge/about/?viewAsMember=true" target="_blank"><i
+                class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h4>Subscribe to Our Newsletter</h4>
+          <p>Stay updated with our latest news and promotions.</p>
+          <form class="subscribe-form">
+            <input type="email" id="newsletter" placeholder="Enter your email">
+            <button type="submit" class="subscribeNews" data-language="English">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <hr>
+      <p class="text-center">&copy; 2023 Peach People. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="../../vendors/bootstrap/bootstrap.min.js"></script>
+  <script src="../../public/js/header.js"></script>
+  <script src="../../public/js/career.js"></script>
+  <script src="../../public/js/sweetalert2.all.min.js"></script>
+  <script src="../../public/js/sweetalert2.min.js"></script>
+  <script src="../../public/js/MessageSystem.js"></script>
+  <script>
+    $(document).ready(function() {
+        sessionStorage.setItem('selectedLanguage', 'en');
+    });
+</script>
+</body>
+
+</html>
